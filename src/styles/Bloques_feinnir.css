@@ -1,0 +1,69 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*margin: 20px;*/ /**/
+  }
+  
+  .menu-item {
+    max-width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  /* PARA CAMBIAR LA IMAGEN DE FONDO O SUPERIOR*/
+  
+  .container {
+    position: relative;
+  }
+  
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  /* AGRANDMIENTO ZOOM*/
+  
+  .menu-item {
+    transition: transform 0.3s; /* Ajusta la duración de la transición */
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.1);
+  }

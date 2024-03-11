@@ -1,0 +1,61 @@
+.App {
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/background.jpg'); /* Reemplaza con tu imagen de fondo */
+  }
+  
+  .faculty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* O el ancho que prefieras */
+    margin: auto;
+  }
+  
+  .faculty-card {
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    width: calc(50% - 10px); /* Restamos 10px para considerar el margen */
+    margin: 5px;
+    height: 300px; /* O la altura que prefieras para tus tarjetas */
+    overflow: hidden;
+  }
+  
+  .faculty-card img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .faculty-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 128, 128, 0.3); /* Inicialmente semi-transparente */
+    transition: background-color 0.3s ease;
+  }
+  
+  .faculty-card:hover .overlay {
+    background-color: rgba(255, 255, 255, 0); /* Transparente cuando el mouse está encima */
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
